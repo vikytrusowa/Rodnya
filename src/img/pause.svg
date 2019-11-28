@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Pause" transform="translate(2.5 2.5)">
+    <path d="M0 54C0 24.1766 24.1762 0 54 0C83.8238 0 108 24.1766 108 54C108 83.8234 83.8238 108 54 108C24.1762 108 0 83.8234 0 54ZM101.878 54C101.878 27.6264 80.3985 6.17143 54 6.17143C27.6015 6.17143 6.1221 27.6264 6.1221 54C6.1221 80.3736 27.6015 101.829 54 101.829C80.3985 101.829 101.878 80.3736 101.878 54Z" id="Fill-4" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    <path d="M0 0L0 42L31 21L0 0Z" transform="translate(43 33)" id="Fill-13" fill="none" stroke="#FFFFFF" stroke-width="5" />
+  </g>
+</svg>

@@ -1,0 +1,114 @@
+.gallery {
+
+  position: relative;
+  &:after {
+    content: "Павел и Ира";
+    opacity: 0.1;
+    z-index: -1;
+    position: absolute;
+    top: 55px;
+    right: 37px;
+    color: #b4d3d3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110px;
+    font-weight: 900;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: -2.2px;
+  }
+  &__header:after {
+    content: "";
+    background: none;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  &__album {
+    flex-wrap: wrap;
+    width: 78%;
+  }
+  &__picture {
+    width: 33%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  &__data {
+    color: #1a1a1d;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 8px;
+  }
+  &__name {
+    color: #49494d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    display: block;
+  }
+  &__link {
+    opacity: 0.5;
+    color: #49494d;
+    font-family: 'HelveticaNeue-CondensedBlack', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    &--active {
+      opacity: 1;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 50px;
+        border-bottom: solid 1px #1a1a1d;
+        width: 28px;
+      }
+    }
+  }
+  &__info {
+    border: solid 1px #b4d3d3;
+    background: #ffffff;
+    box-shadow: -2px 3px 7px rgba(0, 0, 0, 0.11);
+    padding: 14px;
+  }
+  &__desc {
+    color: #1a1a1d;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 5px;
+  }
+  &__value {
+    color: #49494d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__block {
+    margin-bottom: 115px;
+  }
+  &__button{
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+

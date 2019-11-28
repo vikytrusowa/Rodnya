@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Rodnya - gallery</title>
+    <link href="style/css/reset.css" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link href="style/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header  content-container gallery__header">
+    <div class="content-row header__heading ">
+        <nav class=" header__navbar content-row">
+            <button class=" header__burger">
+                <img src="img/burger.svg" alt="Open menu">
+            </button>
+            <div class="header__menu">
+                <div>
+                    <button class="modal__close header__close"> X Закрыть</button>
+                </div>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link header__link--first" href="#">проекты</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link header__link--two" href="#">контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__logo">
+            <img src="img/logo.png" alt="Logo" class="image">
+        </div>
+        <div class="header__box">
+            <a class="header__phone"><span class="header__phone--number">+7 981 896 10 63</span> <img
+                    src="img/phone.svg" alt="phone"></a>
+            <button class="button-white header__call btn open-modal" data-modal="#modal-tel">Заказать звонок</button>
+        </div>
+    </div>
+    <div class="header__hidden">
+        <div class="content-row content-container header__heading  header__fixed">
+            <nav class=" header__navbar header__navbar--fixed content-row ">
+                <button class=" header__burger ">
+                    <img src="img/burger.svg" alt="Open menu">
+                    Меню
+                </button>
+                <div class="header__menu">
+                    <div>
+                        <button class="modal__close header__close"> X Закрыть</button>
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link header__link--first" href="#">проекты</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link header__link--two" href="#">контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+            <div class="header__box content-row">
+                <a class="header__phone header__phone--fixed content-row"><span class="header__phone--number">+7 981 896 10 63</span>
+                    <img
+                            src="img/phone.svg" alt="phone"></a>
+                <button class="button-white header__call btn open-modal" data-modal="#modal-tel">Заказать звонок
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class='modal' id='modal-tel'>
+        <div class='content content-row'>
+            <div class="modal__picture">
+                <img src="img/modal.jpeg" class="image" alt="wedding">
+            </div>
+            <div class="modal__info">
+                <h2 class="title modal__title">Оставить заявку</h2>
+                <p class="modal__text">Какой-нибудь ахуенный текст почему нужно оставить заявку у нас и что он/она
+                    получит от этого</p>
+                <p class="modal__text"> И еще что то)))</p>
+                <p class="modal__text modal__text--bold">Перезвоним вам в течение 15 минут</p>
+                <form class="modal__form">
+                    <input class="modal__input modal__input--avatar" placeholder="Имя">
+                    <input class="modal__input modal__input--phone" placeholder="Ваш Телефон">
+                    <button class="button-blue content-row modal__button btn open-modal modal__thank"
+                            data-modal="#modal-thanks">Перезвонить мне <img src="img/arrow-white.svg" alt="arrow">
+                    </button>
+                </form>
+            </div>
+            <button class='btn close-modal modal__close' data-modal="#modal-tel">x</button>
+        </div>
+    </div>
+    <div class="modal" id="modal-thanks">
+        <div class="content content-row">
+            <div class="modal__info">
+                <h2 class="title modal__title">Спасибо, данные успешно отправлены!</h2>
+                <button class="button-blue content-row modal__button btn close-modal" data-modal="#modal-thanks">
+                    Вернуться на главную <img src="img/arrow-white.svg" alt="arrow"></button>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="gallery content-container">
+    <h2 class="title gallery__title">Проекты</h2>
+    <div class="gallery__slider">
+        <div>
+            <div class="content-row gallery__wrap">
+                <div>
+                    <div class="gallery__block">
+                        <span class="gallery__data">07 / 07 / 2018</span>
+                        <span class="gallery__name">Павел и Ирина</span>
+                    </div>
+                    <a href="#" class="gallery__link gallery__link--active">Фото</a>
+                    <a href="#" class="gallery__link">Видео</a>
+                    <div class="gallery__info">
+                        <ul>
+                            <li class="gallery__item">
+                                <span class="gallery__desc">Срок подготовки</span>
+                                <span class="gallery__value">265 дней</span>
+                            </li>
+                            <li class="gallery__item">
+                                <span class="gallery__desc">
+                                    Локация</span>
+                                <span class="gallery__value">Усадьба Кобрино</span>
+                            </li>
+                            <li class="gallery__item">
+                                <span class="gallery__desc">
+                                    Количество гостей</span>
+                                <span class="gallery__value">87</span>
+                            </li>
+                            <li class="gallery__item">
+                                <span class="gallery__desc">
+                                    Итоговая смета</span>
+                                <span class="gallery__value">785.000 рублей</span>
+                            </li>
+                        </ul>
+                        <button class="button-blue content-row gallery__button">Получить смету <img src="img/arrow-white.svg" alt="arrow"></button>
+                    </div>
+                </div>
+                <div class="gallery__album content-row">
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding1.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding2.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding3.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding4.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding5.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding6.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding7.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding8.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding9.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding2.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding3.jpeg" class="image" alt="wedding1">
+                    </div>
+                    <div class="gallery__picture">
+                        <img src="img/gallery/wedding1.jpeg" class="image" alt="wedding1">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

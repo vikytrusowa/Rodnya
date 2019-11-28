@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="burger" transform="translate(0.5 0.5)">
+    <path d="M0.653846 2.5L16.3462 2.5" id="Line-3" fill="none" stroke="#1A1A1D" stroke-width="1" stroke-linecap="square" />
+    <path d="M0.653846 0.5L16.3462 0.5" transform="translate(0 9)" id="Line-3-Copy" fill="none" stroke="#1A1A1D" stroke-width="1" stroke-linecap="square" />
+    <path d="M0.653846 0.5L16.3462 0.5" transform="translate(0 16)" id="Line-3-Copy-2" fill="none" stroke="#1A1A1D" stroke-width="1" stroke-linecap="square" />
+  </g>
+</svg>

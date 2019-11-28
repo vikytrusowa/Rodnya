@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Rodnya</title>
+    <link href="style/css/reset.css" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link href="style/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header  content-container">
+    <div class="content-row header__heading ">
+        <nav class=" header__navbar content-row">
+            <button class=" header__burger">
+                <img src="img/burger.svg" alt="Open menu">
+            </button>
+            <div class="header__menu">
+                <div>
+                    <button class="modal__close header__close"> X Закрыть</button>
+                </div>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link header__link--first" href="#">проекты</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link header__link--two" href="#">контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__logo">
+            <img src="img/logo.png" alt="Logo" class="image">
+        </div>
+        <div class="header__box">
+            <a class="header__phone"><span class="header__phone--number">+7 981 896 10 63</span> <img
+                    src="img/phone.svg" alt="phone"></a>
+            <button class="button-white header__call btn open-modal" data-modal="#modal-tel">Заказать звонок</button>
+        </div>
+    </div>
+    <div class="header__hidden">
+        <div class="content-row content-container header__heading  header__fixed">
+            <nav class=" header__navbar header__navbar--fixed content-row ">
+                <button class=" header__burger ">
+                    <img src="img/burger.svg" alt="Open menu">
+                    Меню
+                </button>
+                <div class="header__menu">
+                    <div>
+                        <button class="modal__close header__close"> X Закрыть</button>
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link header__link--first" href="#">проекты</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link header__link--two" href="#">контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+            <div class="header__box content-row">
+                <a class="header__phone header__phone--fixed content-row"><span class="header__phone--number">+7 981 896 10 63</span>
+                    <img
+                            src="img/phone.svg" alt="phone"></a>
+                <button class="button-white header__call btn open-modal" data-modal="#modal-tel">Заказать звонок
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class='modal' id='modal-tel'>
+        <div class='content content-row'>
+            <div class="modal__picture">
+                <img src="img/modal.jpeg" class="image" alt="wedding">
+            </div>
+            <div class="modal__info">
+                <h2 class="title modal__title">Оставить заявку</h2>
+                <p class="modal__text">Какой-нибудь ахуенный текст почему нужно оставить заявку у нас и что он/она
+                    получит от этого</p>
+                <p class="modal__text"> И еще что то)))</p>
+                <p class="modal__text modal__text--bold">Перезвоним вам в течение 15 минут</p>
+                <form class="modal__form">
+                    <input class="modal__input modal__input--avatar" placeholder="Имя">
+                    <input class="modal__input modal__input--phone" placeholder="Ваш Телефон">
+                    <button class="button-blue content-row modal__button btn open-modal modal__thank"
+                            data-modal="#modal-thanks">Перезвонить мне <img src="img/arrow-white.svg" alt="arrow">
+                    </button>
+                </form>
+            </div>
+            <button class='btn close-modal modal__close' data-modal="#modal-tel">x</button>
+        </div>
+    </div>
+    <div class="modal" id="modal-thanks">
+        <div class="content content-row">
+            <div class="modal__info">
+                <h2 class="title modal__title">Спасибо, данные успешно отправлены!</h2>
+                <button class="button-blue content-row modal__button btn close-modal" data-modal="#modal-thanks">
+                    Вернуться на главную <img src="img/arrow-white.svg" alt="arrow"></button>
+            </div>
+        </div>
+    </div>
+    <div class="header__social">
+        <a href="" class="header__sprite header__vkontakte"></a>
+        <a href="" class="header__sprite header__instagram"></a>
+    </div>
+    <div class="header__content">
+        <div class="header__slider">
+            <div>
+                <div class="content-row">
+                    <div class="header__numeral">
+                        <span class="header__number">01</span>
+                    </div>
+                    <div class="header__inner content-row">
+                        <div class="header__wrapper header__holder">
+                            <div class="header__text">
+                                <h1 class="header__title">Услуги
+                                    планирования свадеб</h1>
+                                <div class="header__wrap">
+                                    <p class="header__info">Организация авторских свадеб под ключ, помощь
+                                        в организации. Координация свадебного дня
+                                        в Санкт-Петербурге и Ленобласти</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__holder">
+                            <img src="img/slider.jpeg" class="image" alt="Услуги  планирования свадеб">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content-row">
+                    <div class="header__numeral">
+                        <span class="header__number">02</span>
+                    </div>
+                    <div class="header__inner content-row">
+                        <div class="header__wrapper header__holder">
+                            <div class="header__text">
+                                <h1 class="header__title">Координация
+                                    свадебного дня</h1>
+                                <div class="header__wrap">
+                                    <p class="header__info">Ваш личный помощник в день свадьбы.
+                                        На 100% избавляем от тревожной суеты
+                                        в этот долгожданный день</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__holder">
+                            <img src="img/slider2.jpeg" class="image  " alt="Координация
+    свадебного дня">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content-row">
+                    <div class="header__numeral">
+                        <span class="header__number">03</span>
+                    </div>
+                    <div class="header__inner content-row">
+                        <div class="header__wrapper header__holder">
+                            <div class="header__text">
+                                <h1 class="header__title">Помощь в выборе специалистов</h1>
+                                <div class="header__wrap">
+                                    <p class="header__info">Организация авторских свадеб под ключ, помощь
+                                        в организации. Координация свадебного дня
+                                        в Санкт-Петербурге и Ленобласти</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__holder">
+                            <img src="img/slider3.jpeg" class="image" alt="Услуги  планирования свадеб">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content-row">
+                    <div class="header__numeral">
+                        <span class="header__number">04</span>
+                    </div>
+                    <div class="header__inner content-row">
+                        <div class="header__wrapper header__holder">
+                            <div class="header__text">
+                                <h1 class="header__title">Свадебная
+                                    полиграфия</h1>
+                                <div class="header__wrap">
+                                    <p class="header__info">Разработка пригласительных, карточек
+                                        рассадки, меню, плана рассадки и другой свадебной полиграфии</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__holder">
+                            <img src="img/slider4.jpeg" class="image" alt="Услуги  планирования свадеб">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="content-row header__request">
+        <span class="button-blue">Оставить заявку</span>
+        <span class="button-white header__request--arrow"><img src="img/arrow.svg" alt="arrow"></span>
+    </button>
+</header>
+<section class="about content-container">
+    <div class="content-row about__wrapper">
+        <div class="about__picture">
+            <img src="img/about.jpeg" alt="about" class="image">
+        </div>
+        <div class="about__wrap">
+            <ul class="content-row about__list">
+                <li class="about__item about__item--active" data-tab="tab-1">О нас</li>
+                <li class="about__item" data-tab="tab-2">Цифры</li>
+            </ul>
+            <h2 class="title about__title">О нас</h2>
+            <div id="tab-1" class="about__tabs about__tabs--current">
+                <p class="about__text about__paragraph"> C вадебный организатор, в первую очередь, это
+                    ваш близкий друг и опора на протяжении всего процесса подготовки. Поверьте, настоящий профессионал
+                    будет
+                    испытывать не только искреннюю эмпатию к Вашему торжеству, но и в глубине души переживать за все
+                    происходящее не меньше Вас самих.
+                </p>
+                <p class="about__text about__inner">С нами вам будет легко, ведь мы знаем, что необходимо для
+                    комфортного
+                    проведения
+                    вашего праздника и научим максимально разумно управлять бюджетом!</p>
+                <span class="about__text about__name"> Свадебное агентство RODNYA</span>
+            </div>
+            <div id="tab-2" class="about__tabs">
+                <p class="about__text about__paragraph"> Н а сегодняшний день за нашими плечами около 20-ти свадеб,
+                    организованных под ключ в Санкт-Петербурге, бюджетом от 300.000 до 1.000.000 рублей. А также порядка
+                    30-ти координаций свадебного дня.
+                </p>
+                <p class="about__text"> В нашей команде 3 опытных свадебных координатора
+                    и Натали - руководитель и исполнитель.</p>
+                <p class="about__text about__text--inner">
+                    В нашем арсенале есть ряд подрядчиков, которых мы тоже считаем частью нашей команды, ведь из года в
+                    год они доказывают свой профессионализм на деле и мы с радостью пользуемся их услугами
+                </p>
+            </div>
+            <span class="about__info">Задайте нам любой вопрос и получите бесплатную консультацию в ближайшее время!</span>
+            <div class="content-row about__box">
+                <button class="button-blue about__button">Позвонить</button>
+                <button class="button-white about__button btn open-modal" data-modal="#modal-quest">Задать вопрос
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class='modal' id='modal-quest'>
+        <div class='content content-row'>
+            <div class="modal__picture">
+                <img src="img/modal.jpeg" class="image" alt="wedding">
+            </div>
+            <div class="modal__info">
+                <h2 class="title modal__title">Задайте вопрос</h2>
+                <p class="modal__text">Какой-нибудь ахуенный текст почему можно задать любой вопрос в текстовом виде</p>
+                <p class="modal__text">Для того, чтобы мы смогли ответить вам, оставьте свои данные)</p>
+                <p class="modal__text modal__text--bold">Ответим вам в течение 15 минут</p>
+                <form class="modal__form">
+                    <input class="modal__input modal__input--avatar" placeholder="Имя">
+                    <input class="modal__input modal__input--phone" placeholder="Ваш Телефон">
+                    <button class="button-blue content-row modal__buttonbtn open-modal modal__thank"
+                            data-modal="#modal-thanks">Перезвонить мне <img src="img/arrow-white.svg" alt="arrow">
+                    </button>
+                </form>
+            </div>
+            <button class='btn close-modal modal__close' data-modal="#modal-quest">x</button>
+        </div>
+    </div>
+</section>
+<section class="content-container trust">
+    <h2 class="title trust__title">Почему нам доверяют</h2>
+    <div class="content-row trust__wrap">
+        <div class="trust__element">
+            <img src="img/trust.jpeg" alt="" class="image trust__picture">
+            <span class="trust__name">Опыт</span>
+            <p class="trust__text">Организовывали, координировали и администрировали более 1000 свадебных проектах</p>
+        </div>
+        <div class="trust__element">
+            <img src="img/trust2.jpeg" alt="" class="image  trust__picture trust__image--visible">
+            <span class="trust__name">Партнеры</span>
+            <p class="trust__text">Работаем только с проверенными подрядчиками и несем 100%-ую ответственность за их
+                работу</p>
+            <img src="img/trust2.jpeg" alt="" class="image trust__image">
+        </div>
+        <div class="trust__element">
+            <img src="img/trust3.jpeg" alt="" class="image  trust__picture">
+            <span class="trust__name">Прозрачность в работе</span>
+            <p class="trust__text">Четкое понимание распределения бюджета в онлайн-смете
+                с постоянным доступом</p>
+        </div>
+    </div>
+</section>
+<div class="content-wrapper">
+    <section class="content-container projects">
+        <h2 class="title projects__title">Наши пары</h2>
+        <div class="content-row projects__box">
+            <div class="projects__inner">
+                <a href="project.html" class="projects__item content-row projects__item--one">
+                    <div class="projects__info projects__wrap">
+                        <img src="img/play.svg" alt="play" class="projects__icon">
+                        <span class="projects__name">Свадьба Иры и Паши  в пригороде <br> Санкт-Петербурга</span>
+                        <span class="projects__data">Июль, 2018</span>
+                    </div>
+                    <div class="projects__picture">
+                        <img src="img/projects.jpeg" alt="projects" class="projects__image">
+                        <button class="projects__album">Весь альбом</button>
+                    </div>
+
+                </a>
+                <div class="content-row projects__wrapper">
+                    <a href="project.html" class="projects__item projects__item--inner projects__item--two">
+                        <div class="projects__picture">
+                            <img src="img/projects2.jpeg" alt="projects" class="projects__image">
+                            <button class="projects__pause"><img src="img/pause.svg" alt="pause"></button>
+                        </div>
+                        <div class="projects__info">
+                        <span class="projects__name projects__color">Крыши, порт и индастриал
+на свадьбе Алины и Вани</span>
+                            <span class="projects__data  projects__color">Июнь, 2018</span>
+                        </div>
+                    </a>
+                    <a href="project.html" class="projects__item  projects__item--inner projects__item--three">
+                        <div class="projects__picture">
+                            <img src="img/projects3.jpeg" alt="projects" class="projects__image">
+                                <button class="projects__all content-row">
+                                    <img src="img/pause.svg" alt="pause" class="projects__pause--three">
+                                    Весь альбом
+                                </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="project.html" class="projects__item projects__item--two projects__thumbnail">
+                <div class="projects__picture">
+                    <img src="img/projects4.jpeg" alt="projects" class="projects__image">
+                    <button class="projects__pause projects__pause--two"><img src="img/pause.svg" alt="pause"></button>
+                </div>
+                <div class="projects__info">
+                    <span class="projects__name projects__color">Даша и Андрей. Свадьба  в Пушкине</span>
+                    <span class="projects__data  projects__color">Июнь, 2018</span>
+                </div>
+            </a>
+        </div>
+        <button class="button-blue projects__button content-row">Смотреть все проекты <img src="img/arrow-white.svg">
+        </button>
+    </section>
+    <section class="services ">
+        <div class="content-container">
+            <h2 class="title services__title">Что мы делаем</h2>
+            <div class="services__slider">
+                <div>
+                    <div class="services__element content-row">
+                        <div class="header__numeral services__numeral">
+                            <span class="header__number services__number">01</span>
+                        </div>
+                        <div class="services__wrapper content-row">
+                            <div class="services__info">
+                                <h3 class="services__subtitle">Организация под ключ</h3>
+                                <p class="services__text">Полноценная профессиональная помощь
+                                    в подготовке к свадебному дню от момента мысли о свадьбе до праздничного банкета</p>
+                                <button class="button-blue content-row services__button btn open-modal"
+                                        data-modal="#modal-org">Подробнее<img
+                                        src="img/arrow-white.svg">
+                                </button>
+                            </div>
+                            <div class="services__picture">
+                                <img src="img/services.jpeg" alt="services" class="image">
+                                <div class="services__wrap">
+                                    <span class="services__name">Стоимость</span>
+                                    <span class="services__price">ОТ 30.000 РУБЛЕЙ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="services__element content-row">
+                        <div class="header__numeral services__numeral">
+                            <span class="header__number services__number">02</span>
+                        </div>
+                        <div class="services__info">
+                            <h3 class="services__subtitle">Координирование</h3>
+                            <p class="services__text">Координация свадебного дня в присутствии 2-ух
+                                или более специалистов в зависимости от сложности проекта</p>
+                            <button class="button-blue content-row services__button btn open-modal"
+                                    data-modal="#modal-koord">Подробнее<img
+                                    src="img/arrow-white.svg">
+                            </button>
+                        </div>
+                        <div class="services__picture">
+                            <img src="img/services.jpeg" alt="services" class="image">
+                            <div class="services__wrap">
+                                <span class="services__name">Стоимость</span>
+                                <span class="services__price">10.000 руб</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="services__element content-row">
+                        <div class="header__numeral services__numeral">
+                            <span class="header__number services__number">03</span>
+                        </div>
+                        <div class="services__info">
+                            <h3 class="services__subtitle">Организация под ключ</h3>
+                            <p class="services__text">Полноценная профессиональная помощь
+                                в подготовке к свадебному дню от момента мысли о свадьбе до праздничного банкета</p>
+                            <button class="button-blue content-row services__button btn open-modal"
+                                    data-modal="#modal-org">Подробнее<img
+                                    src="img/arrow-white.svg">
+                            </button>
+                        </div>
+                        <div class="services__picture">
+                            <img src="img/services.jpeg" alt="services" class="image">
+                            <div class="services__wrap">
+                                <span class="services__name">Стоимость</span>
+                                <span class="services__price">ОТ 30.000 РУБЛЕЙ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="services__element content-row">
+                        <div class="header__numeral services__numeral">
+                            <span class="header__number services__number">04</span>
+                        </div>
+                        <div class="services__info">
+                            <h3 class="services__subtitle">Координирование</h3>
+                            <p class="services__text">Координация свадебного дня в присутствии 2-ух
+                                или более специалистов в зависимости от сложности проекта</p>
+                            <button class="button-blue content-row services__button btn open-modal"
+                                    data-modal="#modal-koord">Подробнее<img
+                                    src="img/arrow-white.svg">
+                            </button>
+                        </div>
+                        <div class="services__picture">
+                            <img src="img/services.jpeg" alt="services" class="image">
+                            <div class="services__wrap">
+                                <span class="services__name">Стоимость</span>
+                                <span class="services__price">10.000 руб</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class='modal' id='modal-org'>
+            <div class='content content-row'>
+                <div class="modal__picture  modal__picture--inner">
+                    <img src="img/modal.jpeg" class="image modal__image" alt="wedding">
+                </div>
+                <div class="modal__info">
+                    <h2 class="title modal__title">Организация под ключ</h2>
+                    <p class="modal__text">Еще более подробное описание услуги
+                        с пояснением варирования стоимости</p>
+                    <p class="modal__text"> Указать плюсы услуги, наши обязанности, какие гарантии предоставляем.
+                        Продумать какая информация здесь должна быть!!!</p>
+                    <p class="modal__text modal__text--bold"> Остались еще вопросы? Давайте встретимся и проведем
+                        консультацию. Это бесплатно!</p>
+                    <form class="modal__form">
+                        <input class="modal__input modal__input--phone" placeholder="Ваш Телефон">
+                        <button class="button-blue content-row modal__button btn open-modal modal__thank"
+                                data-modal="#modal-thanks">Договориться на встречу <img src="img/arrow-white.svg"
+                                                                                        alt="arrow"></button>
+                    </form>
+                </div>
+                <button class='btn close-modal modal__close' data-modal="#modal-org">x</button>
+            </div>
+        </div>
+        <div class='modal' id='modal-koord'>
+            <div class='content content-row'>
+                <div class="modal__picture modal__picture--inner">
+                    <img src="img/slider2.jpeg" class="image modal__image" alt="wedding">
+                </div>
+                <div class="modal__info">
+                    <h2 class="title modal__title">Координация свадебного дня</h2>
+                    <p class="modal__text">Еще более подробное описание услуги
+                        с пояснением варирования стоимости</p>
+                    <p class="modal__text"> Указать плюсы услуги, наши обязанности, какие гарантии предоставляем.
+                        Продумать какая информация здесь должна быть!!!</p>
+                    <p class="modal__text modal__text--bold">Остались еще вопросы? Давайте встретимся и проведем
+                        консультацию. Это бесплатно!</p>
+                    <form class="modal__form">
+                        <input class="modal__input modal__input--phone" placeholder="Ваш Телефон">
+                        <button class="button-blue content-row modal__button btn open-modal modal__thank"
+                                data-modal="#modal-thanks">Договориться на встречу <img src="img/arrow-white.svg"
+                                                                                        alt="arrow"></button>
+                    </form>
+                </div>
+                <button class='btn close-modal modal__close' data-modal="#modal-koord">x</button>
+            </div>
+        </div>
+    </section>
+</div>
+<section class="content-container stages">
+    <h2 class="title stages__title">Как мы работаем</h2>
+    <div class="content-row stages__inner">
+        <div class="stages__picture">
+            <img src="img/stages.jpeg" alt="stages" class="image">
+        </div>
+        <div class="stages__wrap">
+            <div class="content-row stages__box">
+                <span class="stages__number">01</span>
+                <div class="stages__info">
+                    <span class="stages__name">Знакомство</span>
+                    <p class="stages__text">На первой личной встрече вы поделитесь своими мыслями, планами и желаниями
+                        на свадебный день, а мы расскажем о себе и о том, как работаем</p>
+                </div>
+            </div>
+            <div class="content-row stages__box">
+                <span class="stages__number">02</span>
+                <div class="stages__info">
+                    <span class="stages__name">Заключение договора</span>
+                    <p class="stages__text">Бронирование даты происходит путем заключения официального договора, после
+                        которого мы займемся составлением сценария вашего торжества</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-row  stages__inner">
+        <div class="stages__wrap">
+            <div class="content-row stages__box">
+                <span class="stages__number">03</span>
+                <div class="stages__info">
+                    <span class="stages__name">Составление сметы</span>
+                    <p class="stages__text">Предоставление нескольких вариантов сметы, исходя из пожеланий
+                        и возможностей пары и утверждение одной</p>
+                </div>
+            </div>
+            <div class="content-row  stages__box">
+                <span class="stages__number">04</span>
+                <div class="stages__info">
+                    <span class="stages__name">Подготовка</span>
+                    <p class="stages__text">Составление тайминга мероприятия, личное присутствие на каждой встрече для
+                        подбора специалистов. 24/7 оперативное решение всех возникающих вопросов в день свадьбы
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="stages__picture">
+            <img src="img/stages2.jpeg" alt="stages" class="image">
+        </div>
+    </div>
+</section>
+<div class="content-wrap">
+    <section class="reviews content-container">
+        <h2 class="title reviews__title">Что говорят о нас наши пары</h2>
+        <div class="reviews__slider">
+            <div>
+                <div class="content-row reviews__wrapper">
+                    <div class="reviews__picture">
+                        <img src="img/reviews.jpeg" alt="Dasha" class="reviews__image">
+                    </div>
+                    <div class="reviews__info">
+                        <div class="content-row">
+                            <div class="reviews__inner">
+                                <span class="reviews__name">Дарья, невеста</span>
+                                <span class="reviews__data">07 июля 2018 года</span>
+                            </div>
+                            <div class="reviews__social content-row">
+                                <a href="" class="header__sprite header__vkontakte reviews__icon"></a>
+                                <a href=""
+                                   class="header__sprite header__instagram  reviews__icon reviews__instagram"></a>
+                            </div>
+                            <div class="header__numeral reviews__numeral">
+                                <span class="header__number reviews__number">01</span>
+                            </div>
+                        </div>
+                        <p class="reviews__text">Х очу выразить огромнейшую благодарность Наташе за организацию и
+                            координацию нашей свадьбы! По
+                            мере готовности к свадьбе и высказывания своих «хотелок», мне все больше и больше хотелось
+                            увидеть, что же получится в итоге и все больше хотелось этого праздника, за что ей отдельное
+                            спасибо. Видно было, что Наташа так же переживает за нашу свадьбу как и мы. Огромное спасибо
+                            за
+                            моральную поддержку, когда я была без сил и мне хотелось бросить эту затею, когда я
+                            переживала
+                            по каждой мелочи, спасибо, что привносила уверенность в том, что все будет ОК. На самой
+                            свадьбе
+                            мы конечно же оторвались по полной! У меня не болела голова ни по одному вопросу, я не
+                            заметила
+                            ни одного косяка, я просто веселилась на своём празднике! Спасибо,Наташенька за всё, мы
+                            желаем
+                            тебе с Андреем побольше благодарных и лёгких клиентов 😘😘😘 </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content-row reviews__wrapper">
+                    <div class="reviews__picture">
+                        <img src="img/reviews.jpeg" alt="Dasha" class="reviews__image">
+                    </div>
+                    <div class="reviews__info">
+                        <div class="content-row">
+                            <div class="reviews__inner">
+                                <span class="reviews__name">Дарья, невеста</span>
+                                <span class="reviews__data">07 июля 2018 года</span>
+                            </div>
+                            <div class="reviews__social content-row">
+                                <a href="" class="header__sprite header__vkontakte reviews__icon"></a>
+                                <a href=""
+                                   class="header__sprite header__instagram  reviews__icon reviews__instagram"></a>
+                            </div>
+                            <div class="header__numeral reviews__numeral">
+                                <span class="header__number reviews__number">02</span>
+                            </div>
+                        </div>
+                        <p class="reviews__text">Х очу выразить огромнейшую благодарность Наташе за организацию и
+                            координацию нашей свадьбы! По
+                            мере готовности к свадьбе и высказывания своих «хотелок», мне все больше и больше хотелось
+                            увидеть, что же получится в итоге и все больше хотелось этого праздника, за что ей отдельное
+                            спасибо. Видно было, что Наташа так же переживает за нашу свадьбу как и мы. Огромное спасибо
+                            за
+                            моральную поддержку, когда я была без сил и мне хотелось бросить эту затею, когда я
+                            переживала
+                            по каждой мелочи, спасибо, что привносила уверенность в том, что все будет ОК. На самой
+                            свадьбе
+                            мы конечно же оторвались по полной! У меня не болела голова ни по одному вопросу, я не
+                            заметила
+                            ни одного косяка, я просто веселилась на своём празднике! Спасибо,Наташенька за всё, мы
+                            желаем
+                            тебе с Андреем побольше благодарных и лёгких клиентов 😘😘😘 </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content-row reviews__wrapper">
+                    <div class="reviews__picture">
+                        <img src="img/reviews.jpeg" alt="Dasha" class="reviews__image">
+                    </div>
+                    <div class="reviews__info">
+                        <div class="content-row">
+                            <div class="reviews__inner">
+                                <span class="reviews__name">Дарья, невеста</span>
+                                <span class="reviews__data">07 июля 2018 года</span>
+                            </div>
+                            <div class="reviews__social content-row">
+                                <a href="" class="header__sprite header__vkontakte reviews__icon"></a>
+                                <a href=""
+                                   class="header__sprite header__instagram  reviews__icon reviews__instagram"></a>
+                            </div>
+                            <div class="header__numeral reviews__numeral">
+                                <span class="header__number reviews__number">03</span>
+                            </div>
+                        </div>
+                        <p class="reviews__text">Х очу выразить огромнейшую благодарность Наташе за организацию и
+                            координацию нашей свадьбы! По
+                            мере готовности к свадьбе и высказывания своих «хотелок», мне все больше и больше хотелось
+                            увидеть, что же получится в итоге и все больше хотелось этого праздника, за что ей отдельное
+                            спасибо. Видно было, что Наташа так же переживает за нашу свадьбу как и мы. Огромное спасибо
+                            за
+                            моральную поддержку, когда я была без сил и мне хотелось бросить эту затею, когда я
+                            переживала
+                            по каждой мелочи, спасибо, что привносила уверенность в том, что все будет ОК. На самой
+                            свадьбе
+                            мы конечно же оторвались по полной! У меня не болела голова ни по одному вопросу, я не
+                            заметила
+                            ни одного косяка, я просто веселилась на своём празднике! Спасибо,Наташенька за всё, мы
+                            желаем
+                            тебе с Андреем побольше благодарных и лёгких клиентов 😘😘😘 </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content-row reviews__wrapper">
+                    <div class="reviews__picture">
+                        <img src="img/reviews.jpeg" alt="Dasha" class="reviews__image">
+                    </div>
+                    <div class="reviews__info">
+                        <div class="content-row">
+                            <div class="reviews__inner">
+                                <span class="reviews__name">Дарья, невеста</span>
+                                <span class="reviews__data">07 июля 2018 года</span>
+                            </div>
+                            <div class="reviews__social content-row">
+                                <a href="" class="header__sprite header__vkontakte reviews__icon"></a>
+                                <a href=""
+                                   class="header__sprite header__instagram  reviews__icon reviews__instagram"></a>
+                            </div>
+                            <div class="header__numeral reviews__numeral">
+                                <span class="header__number reviews__number">04</span>
+                            </div>
+                        </div>
+                        <p class="reviews__text">Х очу выразить огромнейшую благодарность Наташе за организацию и
+                            координацию нашей свадьбы! По
+                            мере готовности к свадьбе и высказывания своих «хотелок», мне все больше и больше хотелось
+                            увидеть, что же получится в итоге и все больше хотелось этого праздника, за что ей отдельное
+                            спасибо. Видно было, что Наташа так же переживает за нашу свадьбу как и мы. Огромное спасибо
+                            за
+                            моральную поддержку, когда я была без сил и мне хотелось бросить эту затею, когда я
+                            переживала
+                            по каждой мелочи, спасибо, что привносила уверенность в том, что все будет ОК. На самой
+                            свадьбе
+                            мы конечно же оторвались по полной! У меня не болела голова ни по одному вопросу, я не
+                            заметила
+                            ни одного косяка, я просто веселилась на своём празднике! Спасибо,Наташенька за всё, мы
+                            желаем
+                            тебе с Андреем побольше благодарных и лёгких клиентов 😘😘😘 </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content-row reviews__wrapper">
+                    <div class="reviews__picture">
+                        <img src="img/reviews.jpeg" alt="Dasha" class="reviews__image">
+                    </div>
+                    <div class="reviews__info">
+                        <div class="content-row">
+                            <div class="reviews__inner">
+                                <span class="reviews__name">Дарья, невеста</span>
+                                <span class="reviews__data">07 июля 2018 года</span>
+                            </div>
+                            <div class="reviews__social content-row">
+                                <a href="" class="header__sprite header__vkontakte reviews__icon"></a>
+                                <a href=""
+                                   class="header__sprite header__instagram  reviews__icon reviews__instagram"></a>
+                            </div>
+                            <div class="header__numeral reviews__numeral">
+                                <span class="header__number reviews__number">05</span>
+                            </div>
+                        </div>
+                        <p class="reviews__text">Х очу выразить огромнейшую благодарность Наташе за организацию и
+                            координацию нашей свадьбы! По
+                            мере готовности к свадьбе и высказывания своих «хотелок», мне все больше и больше хотелось
+                            увидеть, что же получится в итоге и все больше хотелось этого праздника, за что ей отдельное
+                            спасибо. Видно было, что Наташа так же переживает за нашу свадьбу как и мы. Огромное спасибо
+                            за
+                            моральную поддержку, когда я была без сил и мне хотелось бросить эту затею, когда я
+                            переживала
+                            по каждой мелочи, спасибо, что привносила уверенность в том, что все будет ОК. На самой
+                            свадьбе
+                            мы конечно же оторвались по полной! У меня не болела голова ни по одному вопросу, я не
+                            заметила
+                            ни одного косяка, я просто веселилась на своём празднике! Спасибо,Наташенька за всё, мы
+                            желаем
+                            тебе с Андреем побольше благодарных и лёгких клиентов 😘😘😘 </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content-row reviews__wrapper">
+                    <div class="reviews__picture">
+                        <img src="img/reviews.jpeg" alt="Dasha" class="reviews__image">
+                    </div>
+                    <div class="reviews__info">
+                        <div class="content-row">
+                            <div class="reviews__inner">
+                                <span class="reviews__name">Дарья, невеста</span>
+                                <span class="reviews__data">07 июля 2018 года</span>
+                            </div>
+                            <div class="reviews__social content-row">
+                                <a href="" class="header__sprite header__vkontakte reviews__icon"></a>
+                                <a href=""
+                                   class="header__sprite header__instagram  reviews__icon reviews__instagram"></a>
+                            </div>
+                            <div class="header__numeral reviews__numeral">
+                                <span class="header__number reviews__number">06</span>
+                            </div>
+                        </div>
+                        <p class="reviews__text">Х очу выразить огромнейшую благодарность Наташе за организацию и
+                            координацию нашей свадьбы! По
+                            мере готовности к свадьбе и высказывания своих «хотелок», мне все больше и больше хотелось
+                            увидеть, что же получится в итоге и все больше хотелось этого праздника, за что ей отдельное
+                            спасибо. Видно было, что Наташа так же переживает за нашу свадьбу как и мы. Огромное спасибо
+                            за
+                            моральную поддержку, когда я была без сил и мне хотелось бросить эту затею, когда я
+                            переживала
+                            по каждой мелочи, спасибо, что привносила уверенность в том, что все будет ОК. На самой
+                            свадьбе
+                            мы конечно же оторвались по полной! У меня не болела голова ни по одному вопросу, я не
+                            заметила
+                            ни одного косяка, я просто веселилась на своём празднике! Спасибо,Наташенька за всё, мы
+                            желаем
+                            тебе с Андреем побольше благодарных и лёгких клиентов 😘😘😘 </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="content-container content-row subscribe__wrapper">
+            <div class="subscribe__picture">
+                <img src="img/subscribe.png" alt="subscribe" class="subscribe__image">
+            </div>
+            <div class="subscribe__info">
+                <h2 class="title">Подписывайтесь на наш аккаунт в Instagram</h2>
+                <a href="#" class="subscribe__link"><img src="img/instagram.svg" alt="instagram"> @RODNYA_SPB</a>
+                <p class="subscribe__text">Получайте больше полезной информации из нашего профиля в Инстаграмм. А
+                    именно:</p>
+                <ul class="subscribe__list">
+                    <li class="subscribe__item">
+                        Изучай #СоветыОтРодни - правильные шаги самостоятельной подготовки
+                    </li>
+                    <li class="subscribe__item">Черпай новые идеи для своей свадьбы из наших фоотчетов</li>
+                    <li class="subscribe__item">Читай отзывы счастливых молодоженов</li>
+                    <li class="subscribe__item">Смотри примеры разработаной нами свадебной полиграфии</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="content-container contacts">
+    <div class="content-row contacts__element">
+        <div class="contacts__picture">
+            <img src="img/contacts.jpeg" alt="contacts" class="contacts__image">
+        </div>
+        <div class="contacts__wrap">
+            <div class="contacts__inner">
+                <a href="#" class="contacts__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <p class="contacts__text contacts__paragraph">О бязательно звоните нам, если планируете свою свадьбу. На
+                    раннем этапе возможностей для решений ее организации всегда больше!
+                </p>
+                <p class="contacts__text"> По вопросам рекламы и сотрудничества принимаем заявки в форме электронного
+                    письма</p>
+                <div class="content-row contacts__box">
+                    <div class="contacts__item content-row">
+                        <img src="img/telephone.jpeg" alt="telephone" class="contacts__icon">
+                        <div>
+                            <a class="contacts__link" href="#">+7 981 896 10 63</a>
+                            <a class="contacts__link" href="#">+7 911 168 82 11</a>
+                        </div>
+                    </div>
+                    <div class="contacts__item content-row">
+                        <img src="img/envelope.svg" alt="envelope" class="contacts__icon">
+                        <a class="contacts__link" href="#">rodnyaspb@gmail.com</a>
+                    </div>
+                </div>
+                <div class="content-row  contacts__box ">
+                    <div class="contacts__item content-row">
+                        <div class="contacts__social contacts__icon">
+                            <span class="contacts__sprite header__instagram"></span>
+                        </div>
+                        <a class="contacts__link " href="#">@rodnya_spb</a>
+                    </div>
+                    <div class="contacts__item content-row">
+                        <div class="contacts__social contacts__icon">
+                            <span class="contacts__sprite header__vkontakte"></span>
+                        </div>
+                        <a class="contacts__link" href="#">@rodnya_wedding</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-row  contacts__wrapper">
+                <button class="button-white contacts__telephone"><img src="img/telephone.jpeg" alt="telephone"
+                                                                      class="contacts__icon">Ваш Телефон
+                </button>
+                <button class="button-blue contacts__meeting content-row">Договориться на встречу<img
+                        src="img/arrow-white.svg" alt="arrow"></button>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
